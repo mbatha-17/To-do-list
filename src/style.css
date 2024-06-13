@@ -11,7 +11,8 @@ body {
   
   #list {
     background: #fff;
-    padding: 20px;
+    padding: 10px;
+    width: 50%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-top: 10px solid black;
@@ -21,13 +22,25 @@ body {
   ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   li {
     background: #f9f9f9;
-    margin: 10px 0;
+    margin: 10px;
     padding: 10px;
+    width: 87%;
     border: 1px solid #ddd;
     border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
   }
   
+  li .checkbox {
+    margin-right: 100px;
+  }
+
+  li .ellipsis-icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
