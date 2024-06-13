@@ -44,3 +44,15 @@ body {
     cursor: pointer;
     margin-left: 10px;
   }
+
+  #new-task-input {
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    font-style: italic;
+    background-color: #ddd;
+  }
+
+  p {
+    text-align: center;
+  }
