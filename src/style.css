@@ -35,7 +35,17 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
+  li input {
+    border: none;
+  }
   
+  li button {
+    border: none;
+    color: #ddd;
+    cursor: pointer;
+    border-radius: 3px;
+  }
   li .checkbox {
     margin-right: 100px;
   }
