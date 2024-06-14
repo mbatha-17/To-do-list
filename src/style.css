@@ -25,22 +25,66 @@ body {
     margin: 0;
   }
   
+  li .checkbox {
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+  }
+
   li {
     background: #f9f9f9;
     margin: 10px;
     padding: 10px;
+    padding-left: 30px;
     width: 87%;
     border: 1px solid #ddd;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
-  }
-  
-  li .checkbox {
-    margin-right: 100px;
+    position: relative;
   }
 
   li .ellipsis-icon {
     cursor: pointer;
     margin-left: 10px;
   }
+
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+  }
+
+  #new-task-input {
+    list-style: italic;
+    padding: 10px;
+    margin-left: 10px;
+    width: 89%;
+  }
+
+  .placeholder {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .placeholder input {
+    width: 80%;
+    padding-left: 30px; 
+  }
+ .placeholder i {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black; 
+
+}
+
+  
