@@ -1,6 +1,6 @@
 
 import './style.css';
-import { toggleTaskCompletion, clearCompletedTasks } from './taskStatus.js';
+import { toggleTaskCompletion, clearCompletedTasks } from './modules/status.js';
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [
   { description: 'clean house', completed: true, index: 0 },
