@@ -49,6 +49,9 @@ body {
     margin-left: 10px;
   }
 
+  .trash-icon {
+    cursor: pointer;
+  }
   p {
     text-align: center;
   }
@@ -85,6 +88,10 @@ body {
     transform: translateY(-50%);
     color: black; 
 
+}
+
+#clear {
+  cursor: pointer;
 }
 
   
