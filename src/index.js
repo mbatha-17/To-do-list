@@ -1,29 +1,27 @@
-<<<<<<< HEAD
 
-import './style.css';
-import { toggleTaskCompletion, clearCompletedTasks } from './modules/status.js';
 
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [
-  { description: 'clean house', completed: true, index: 0 },
-  { description: 'wash dishes', completed: true, index: 1 },
-  { description: 'watch movie', completed: false, index: 2 },
-];
+// import './style.css';
+// import { toggleTaskCompletion, clearCompletedTasks } from './modules/status.js';
 
-const renderTasks = () => {
-  const todoList = document.getElementById('todo-list');
-  todoList.innerHTML = '';
+// let tasks = JSON.parse(localStorage.getItem('tasks')) || [
+//   { description: 'clean house', completed: true, index: 0 },
+//   { description: 'wash dishes', completed: true, index: 1 },
+//   { description: 'watch movie', completed: false, index: 2 },
+// ];
 
-  tasks.sort((a, b) => a.index - b.index).forEach((task, index) => {
-    const li = document.createElement('li');
-    li.textContent = task.description;
-=======
+// const renderTasks = () => {
+//   const todoList = document.getElementById('todo-list');
+//   todoList.innerHTML = '';
 
+//   tasks.sort((a, b) => a.index - b.index).forEach((task, index) => {
+//     const li = document.createElement('li');
+//     li.textContent = task.description;
+  
 import './style.css';
 import { addTask, deleteTask, editTask, getTasks, toggleTaskCompletion, clearCompletedTasks } from './tasks';
 
 const todoListElement = document.getElementById('todo-list');
 let tasks = getTasks();
->>>>>>> main
 
 function renderTasks() {
   console.log('Rendering tasks:', tasks);
@@ -36,7 +34,6 @@ function renderTasks() {
     checkbox.className = 'checkbox';
     checkbox.checked = task.completed;
     checkbox.addEventListener('change', () => {
-<<<<<<< HEAD
       toggleTaskCompletion(tasks, index);
       renderTasks();
     });
@@ -48,7 +45,6 @@ function renderTasks() {
     li.appendChild(checkbox);
     li.appendChild(ellipsisIcon);
     todoList.appendChild(li);
-=======
       toggleTaskCompletion(task.index);
       renderTasks();
     });
@@ -85,11 +81,8 @@ function renderTasks() {
     listItem.appendChild(ellipsisIcon);
     listItem.appendChild(trashIcon);
     todoListElement.appendChild(listItem);
->>>>>>> main
-  });
-}
+  };
 
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', renderTasks);
 
 const clearButton = document.getElementById('clear');
@@ -112,7 +105,6 @@ newTaskInput.addEventListener('keypress', (e) => {
     renderTasks();
   }
 });
-=======
 document.getElementById('new-task-input').addEventListener('keypress', (event) => {
  if (event.key === 'Enter') {
   const taskInput = document.getElementById('new-task-input');
@@ -137,4 +129,3 @@ document.getElementById('clear').addEventListener('click', () => {
 window.onload = () => {
   renderTasks();
 };
->>>>>>> main
