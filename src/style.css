@@ -48,13 +48,11 @@ body {
     cursor: pointer;
     margin-left: 10px;
   }
-  
-  .clear {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .trash-icon {
+    cursor: pointer;
   }
-  #clear {
+  p {
     text-align: center;
     border: none;
     cursor: pointer;
@@ -95,6 +93,10 @@ body {
     transform: translateY(-50%);
     color: black; 
 
+}
+
+#clear {
+  cursor: pointer;
 }
 
   
